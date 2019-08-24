@@ -43,5 +43,18 @@ module.exports = app => {
         .get(app.api.subsetores.getById)
         .put(app.api.subsetores.save)
         .delete(app.api.subsetores.remove)
-        
-}
+    
+    app.route('/produtos/') 
+        .all(app.config.passport.authenticate())
+        .get(app.api.produtos.get)
+        .put(app.api.produtos.save)
+        .delete(app.api.produtos.remove)
+
+    app.route('/produtos/:id') 
+        .all(app.config.passport.authenticate())
+        .get(app.api.produtos.getById)
+        .put(app.api.produtos.save)
+        .delete(app.api.produtos.remove)
+    
+        // rota com setores, subsetores e produtos agrupados 
+    }
