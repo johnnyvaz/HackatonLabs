@@ -10,7 +10,8 @@
     ],
     "setores": [
         { "id": 1,
-         "body": "some comment", "postId": 1 }
+        "body": "some comment",
+        "postId": 1 }
     ],
-    "loja": { "name": "typicode" }
+    "loja": { "nome": "Franca01" }
 }
