@@ -1,0 +1,16 @@
+{
+    "produtos": [
+        { "id": 1,
+        "nome": "Smartphone Motorola Moto G7 Play 32GB - Ouro",
+        "descricao": "Projetado para não desacelerar Diga adeus aos atrasos em vídeos e jogos com o moto g7 play. O processador Qualcomm Snapdragon 632 octa-core proporciona até 60% mais performance que a geração anterior, para você nunca diminuir o seu ritmo. Ampla diversão Com a tela ampla do 5.7\" Max Vision HD+, você ultrapassa os limites da diversão. A Max Vision inova com a visualização máxima no formato 19:9, permitindo imersão total em jogos e filmes favoritos. Câmera que faz tudo por você Com o lançamento do moto g7 play, você grava vídeos em 4k, filma em câmera lenta ou time-lapse e ainda seleciona uma cor em destaque para personalizar suas fotos.",
+        "gtin": "07892597348459",
+        "marca": "Motorola",
+        "localizacao":"abcd3"
+    }
+    ],
+    "setores": [
+        { "id": 1,
+         "body": "some comment", "postId": 1 }
+    ],
+    "loja": { "name": "typicode" }
+}
