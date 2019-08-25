@@ -1,0 +1,88 @@
+Nome da Solução e Uma Tagline
+Magalu Achei
+
+Uma nova experiência de compra
+
+
+“Nós somos ____ (nome da solução), e vamos mostrar como ____ (tagline).”
+
+Problema a Ser Resolvido
+
+Aqui você vai explicar o problema que está resolvendo, contextualizando a necessidade ou a dor que levou sua equipe a querer resolver aquilo. A partir desse ponto começa suas habilidades de storytelling.
+
+Solução
+A ideia dessa parte da apresentação é explicar como funciona sua solução, e os passos para a resolução do problema.
+
+Magalu Achei É Uma nova experiencia de compra, de forma fácil e rápida, a informação chega até o cliente,
+facilitando e modernizando a entrega de informação detalhada dos produtos 
+e além disso ainda é um simplificador da etiquetagem. alertando e indicando os produtos
+que precisam ser reetiquetados.
+
+
+Números de Mercado
+Para contextualizar melhor sua solução, você vai apresentar os números que a fizeram ser tão relevante.
+Exemplo, quantas pessoas tiveram aquele problema que você está resolvendo?
+
+Gastos com etiquetagem em todas as lojas R$ 90.000,00	por mês
+
+- 
+
+Demonstração
+Essa é a hora da verdade!! Aqui você vai mostrar em tempo real sua solução funcionando, ao executar a aplicação que desenvolveu durante o hackathon. Uma opção também é mostrar em vídeo a solução funcionando.
+- story board
+- prototipos
+
+demo real - ver se mostra um gif seguido se acesso real no sistema localhost
+
+
+
+Tecnologias usadas
+- Node.js , React, 
+Segurança, ***
+
+Integração de Serviços
+Provavelmente você acessou alguns serviços, APIs etc para compor sua solução.
+Aqui você vai citar quais foram esses serviços.
+
+Benefícios da Sua Solução
+Mostre o que seu usuário vai ganhar ao usar sua solução, de preferência através de números.
+
+R$ 1.080.000,00	12 meses = 5400	tablets (considerando 200,reais por tablet)
+6,75	tablets por loja ( considerando 800 lojas com produtos )
+ 1 hora - cartaziar
+ mais vendas e menos tempos cartaziando
+ 1974+45%
+ salario 
+
+
+Marketing
+Focando ainda mais no aspecto de negócios, como as pessoas saberiam que sua solução existe?
+ E o que você faria para isso acontecer?
+
+Captação de leads coletando o numero do celular
+
+
+
+Equipe
+Para que a banca tenha uma perspectiva de quem está por trás desse trabalho,
+indique com fotos quem são os participantes da equipe, com nome e função de cada um.
+
+Vinicius Miranda: 
+
+
+Próximos Passos
+Considerando o que sua equipe criou até o momento.
+Quais seriam os próximos passos em termos de evolução da solução,
+estabelecimento do negócio, necessidade de investimento etc.
+
+Recursos de Assessibilidade
+Segurança: jwt, ssl,  
+
+
+Conclusão
+Aí está! São 12 passos para você ter um modelo vencedor para sua solução.
+E para ver um pitch deck na prática, segue um exemplo das 5 top pitch decks de um hackathon da DeveloperWeek, nos Estados Unidos.
+
+
+
+1º empresa no brasil a fazer tal coisa.
