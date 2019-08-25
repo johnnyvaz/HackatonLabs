@@ -15,7 +15,7 @@
 * Localização de grupo de produtos por meio de cores;  
 * Geração e Leitura de QRCode;
 
-![Tela Inicial](/docs/pagina-inicio-app.jpeg)
+![Tela Inicial](/docs/app-inicio.png)
 
 ## Instalação
 
