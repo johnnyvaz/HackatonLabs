@@ -6,7 +6,7 @@ module.exports = app => {
         if(req.params.id) setor.id = req.params.id
         try {
             existsOrError(setor.cor, 'Cor não informado')
-            existsOrError(setor.nome, 'Nome não informado')
+            existsOrError(setor.setornome, 'Nome não informado')
             existsOrError(setor.cod, 'Código não informada')
             
         } catch(msg) {
