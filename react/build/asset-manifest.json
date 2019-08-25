@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/magachei/static/js/main.bb5cbc09.chunk.js",
+    "main.js.map": "/magachei/static/js/main.bb5cbc09.chunk.js.map",
+    "runtime~main.js": "/magachei/static/js/runtime~main.afda575c.js",
+    "runtime~main.js.map": "/magachei/static/js/runtime~main.afda575c.js.map",
+    "static/css/2.266e55a5.chunk.css": "/magachei/static/css/2.266e55a5.chunk.css",
+    "static/js/2.06088f68.chunk.js": "/magachei/static/js/2.06088f68.chunk.js",
+    "static/js/2.06088f68.chunk.js.map": "/magachei/static/js/2.06088f68.chunk.js.map",
+    "index.html": "/magachei/index.html",
+    "precache-manifest.e32a729be3d6328867a3f5f9c0ecbaaa.js": "/precache-manifest.e32a729be3d6328867a3f5f9c0ecbaaa.js",
+    "service-worker.js": "/magachei/service-worker.js",
+    "static/css/2.266e55a5.chunk.css.map": "/magachei/static/css/2.266e55a5.chunk.css.map"
+  }
+}
