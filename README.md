@@ -48,7 +48,6 @@ npm start
 * Acesso fácil para deficientes visuais;
 * Botão para solicitar ajuda de um vendedor;
 
-_Para mais exemplos, consulte a [Wiki][wiki]._ 
 
 
 ## Contributing
