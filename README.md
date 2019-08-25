@@ -1,42 +1,55 @@
 # API Achei!
-> Catalogar os produtos, podendo ver descrição e fazer comparações.
+> **Magalu Achei** É Uma nova experiencia de compra, de forma fácil e rápida, a informação chega até o cliente, facilitando e modernizando a entrega de informação detalhada dos produtos e além disso ainda é um simplificador da etiquetagem. alertando e indicando os produtos que precisam ser reetiquetados.
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-API que faz a catalogação dos produtos referentes aos subgrupos dos departamentos das lojas físicas. Podendo selecionar um determinado produto, ver sua descrição e compará-lo com outro produto de seu subgrupo.
+# Features
+* Catálogo virtual para uso do vendedor e do cliente;
+* Organização da armazenagem da localização dos produtos nas gondolas;
+* Facilitação da busca de informações detalhadas dos produtos;
+* Comparação entre produtos na própria gondola;
+* Automação de Geração da Impressão de Etiquetas dos produtos;
+* Notificação de preços alterados para manutenção da etiquetagem;
+* Localização de grupo de produtos por meio de cores;  
+* Geração e Leitura de QRCode;
 
-![](../header.png)
+![Tela Inicial](/docs/pagina-inicio-app.jpeg)
 
 ## Instalação
 
-OS X & Linux:
+Backend:
 
 ```sh
-npm install my-crazy-module --save
+cd backend
+mysql -u root -p 
+(senha)
+create database achei;
+quit;
+2 - Configure o arquivo .env (dados do banco de dados mysql criado)
+npm install
+npm install -g knex
+knex migrate:latest
+knex seed:run
+npm start
 ```
 
-Windows:
+Instalação do FrontEnd:
 
 ```sh
-edit autoexec.bat
+cd frontend
+npm install
+npm start
 ```
 
-## Exemplo de uso
+## Recursos a serem implementados na versão 2.0
 
-Alguns exemplos interessantes e úteis sobre como seu projeto pode ser utilizado. Adicione blocos de códigos e, se necessário, screenshots.
+* Acesso fácil para deficientes visuais;
+* Botão para solicitar ajuda de um vendedor;
 
 _Para mais exemplos, consulte a [Wiki][wiki]._ 
 
-## Configuração para Desenvolvimento
-
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
-
-```sh
-make install
-npm test
-```
 
 ## Contributing
 
