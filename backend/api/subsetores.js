@@ -34,8 +34,21 @@ module.exports = app => {
     }
 
     const getById = (req, res) => {
+        const pro = "produtos"
+        const su = "subsetores"
         app.db('subsetores')
-            .where({ id: req.params.id })
+        .select( pro+'.produtonome', pro+'.descricao', pro+'.img', pro+'.preco', pro+'.etiquetar',
+        pro+'.dataEtiqueta', pro+'.barcode', su+'.subsetorid', su+'.subsetornome')
+        .from('subsetores')
+        .leftJoin('produtos','produtos.produtoid', 'subsetores.subsetorid')
+        .where({ subsetorid: req.params.id })
+        .first()
+        .then(setores => res.json(setores))
+        .catch(err => res.status(500).send(err))
+
+        
+        app.db('subsetores')
+            .where({ subsetorid: req.params.id })
             .first()
             .then(subsetor => res.json(subsetor))
             .catch(err => res.status(500).send(err))

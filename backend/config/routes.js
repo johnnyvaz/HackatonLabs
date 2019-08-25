@@ -25,6 +25,10 @@ module.exports = app => {
         .get(app.api.setores.get)
         .put(app.api.setores.save)
         .delete(app.api.setores.remove)
+    
+    app.route('/:setorid/produtos')  //funcionando - ok
+        // .all(app.config.passport.authenticate())
+        .get(app.api.setores.getSetPro)
 
     app.route('/setores/:id') //funcionando - ok
         // .all(app.config.passport.authenticate())

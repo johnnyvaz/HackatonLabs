@@ -1,7 +1,7 @@
 
 exports.up = function (knex, Promise) {
     return knex.schema.alterTable('subsetores', table => {
-        table.integer('setor_id').unsigned().references('id')
+        table.integer('setor_id').unsigned().references('setorid')
         .inTable('setores')
     })
 };

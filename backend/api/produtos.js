@@ -14,7 +14,7 @@ module.exports = app => {
         if(produto.id) {
             app.db('produtos')
             .update(produto)
-            .where({ id: produto.id })
+            .where({ produtoid: produto.id })
             .then(_ => res.status(201).send({ "status":true, produto}))
             .catch(err => res.status(500).send(err))
         } else {
@@ -42,21 +42,23 @@ module.exports = app => {
         const se = "setores"
         const su = "subsetores"
         app.db('produtos')
-        .select( pro+'.id', pro+'.produtonome', pro+'.descricao', pro+'.img', pro+'.preco', pro+'.etiquetar',
-        pro+'.dataEtiqueta', pro+'.barcode', se+'.id', se+'.setornome', se+'.cor', su+'.id', su+'.subsetornome')
+        .select( pro+'.produtoid', pro+'.produtonome', pro+'.descricao', pro+'.img', pro+'.preco', pro+'.etiquetar',
+        pro+'.dataEtiqueta', pro+'.barcode', se+'.setorid', se+'.setornome', se+'.cor', su+'.subsetorid', su+'.subsetornome')
         .from('produtos')
-        //inner join subsetores on ( produtos.subsetor_id = subsetores.id )
-        //inner join setores on ( subsetores.setor_id = setores.id )
-        .leftJoin('subsetores', 'produtos.subsetor_id', 'subsetores.id')
-        .leftJoin('setores','subsetores.setor_id', 'setores.id')
+        .leftJoin('subsetores', 'produtos.subsetor_id', 'subsetores.subsetorid')
+        .leftJoin('setores','subsetores.setor_id', 'setores.setorid')
         .limit(limit).offset(page * limit - limit)
         .then(produtos => res.json({ data: { limit, page} , produtos }))
         .catch(err => res.status(500).send(err))
     }
         
     const getById = (req, res) => {
+        const pro = "produtos"
         app.db('produtos')
-        .where({ id: req.params.id })
+        .select( pro+'.produtoid', pro+'.produtonome', pro+'.descricao', pro+'.img', pro+'.preco', pro+'.etiquetar',
+        pro+'.dataEtiqueta', pro+'.barcode')
+        .from('produtos')
+        .where({ produtoid: req.params.id })
         .first()
         .then(produto => res.json(produto))
         .catch(err => res.status(500).send(err))
@@ -65,7 +67,7 @@ module.exports = app => {
     const remove = async(req,res) => {
         try {
             const rowsDeleted = await app.db('produtos')
-            .where({ id: req.params.id }).del()
+            .where({ produtoid: req.params.id }).del()
             res.status(204).send()
         } catch(msg) {
             res.status(500).send(msg)
