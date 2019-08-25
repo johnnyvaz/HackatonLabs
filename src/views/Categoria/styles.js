@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom'
 
-export const Setor = styled.a`
+export const Setor = styled(Link)`
     display: flex;
     flex: 1; 
     background: ${props => props.color} url(${props => props.img}) no-repeat left center;
@@ -19,5 +20,6 @@ export const Setor = styled.a`
         text-align: right;
         padding: 5px 10px;
         background-color: ${props => props.color};
+        text-decoration: none;
     }
 `;

@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   body{
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
-    background: white;
+    background: #f4f4f4;
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
   }
