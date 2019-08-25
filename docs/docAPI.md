@@ -1,5 +1,3 @@
-# Seja Bem Vindo á MAGACHEI
-
 ## Instruções para uso da API Achei
 
 ## login e token
